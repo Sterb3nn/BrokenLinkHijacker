@@ -38,24 +38,6 @@ number_of_broken_link = 0
 total_urls_visited = 0
 
 
-def banner():
-    version = "1.0"
-    ascii_banner = """
-     ____            _                _     _       _
-    | __ ) _ __ ___ | | _____ _ __   | |   (_)_ __ | | __
-    |  _ \| '__/ _ \| |/ / _ \ '_ \  | |   | | '_ \| |/ /
-    | |_) | | | (_) |   <  __/ | | | | |___| | | | |   <
-    |____/|_|  \___/|_|\_\___|_| |_| |_____|_|_| |_|_|\_\\
-
-     _   _ _  _            _               _   _   _
-    | | | (_)(_) __ _  ___| | _____ _ __  | | | | | |
-    | |_| | || |/ _` |/ __| |/ / _ \ '__| | | | | | |
-    |  _  | || | (_| | (__|   <  __/ |    |_| |_| |_|
-    |_| |_|_|/ |\__,_|\___|_|\_\___|_|    (_) (_) (_)
-           |__/
-    """
-    print(ascii_banner)
-    print(f"{RED}                        Version-", version)
 
 
 def random_ua():
@@ -321,7 +303,6 @@ if __name__ == "__main__":
         global thread_no
         thread_no = args.threads
         output_location = domain_name+"_links.txt"
-        banner()
         if args.verbosity == False or args.verbosity == "F":
             verbosity = False
         else:
